@@ -203,7 +203,7 @@ create_time_table = function(con) {
 
 main = function() {
     con = DBI::dbConnect(PostgreSQL(), dbname='lanl', host='localhost', port=5432, 
-                         user='potentpwnables', password='converge2019')
+                         user='bryan', password='converge2019')
     
     process_reference_tables(con)
     process_dns(con)
